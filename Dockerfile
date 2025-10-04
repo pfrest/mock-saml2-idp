@@ -1,5 +1,5 @@
 FROM composer:2 as composer
-FROM php:8.2-apache
+FROM php:8.4-apache
 
 # Install composer
 COPY --from=composer /usr/bin/composer /usr/local/bin/composer
