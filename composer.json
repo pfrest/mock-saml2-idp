@@ -1,0 +1,18 @@
+{
+  "name": "pfrest/mocksaml2idp",
+  "description": "A mock SAML 2.0 IdP for REST clients.",
+  "autoload": {
+    "psr-4": {
+      "MockSaml2Idp\\": "src/"
+    }
+  },
+  "require": {
+    "simplesamlphp/simplesamlphp": "^2.4"
+  },
+  "config": {
+    "allow-plugins": {
+      "simplesamlphp/composer-xmlprovider-installer": true,
+      "simplesamlphp/composer-module-installer": true
+    }
+  }
+}
