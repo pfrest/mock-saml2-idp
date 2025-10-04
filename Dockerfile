@@ -1,36 +1,42 @@
-FROM php:7.1-apache
-MAINTAINER Kristoph Junge <kristoph.junge@gmail.com>
+FROM composer:2 as composer
+FROM php:8.2-apache
 
-# Utilities
-RUN apt-get update && \
-    apt-get -y install apt-transport-https git curl vim --no-install-recommends && \
-    rm -r /var/lib/apt/lists/*
+# Install composer
+COPY --from=composer /usr/bin/composer /usr/local/bin/composer
 
-# SimpleSAMLphp
-ARG SIMPLESAMLPHP_VERSION=1.15.2
-RUN curl -s -L -o /tmp/simplesamlphp.tar.gz https://github.com/simplesamlphp/simplesamlphp/releases/download/v$SIMPLESAMLPHP_VERSION/simplesamlphp-$SIMPLESAMLPHP_VERSION.tar.gz && \
-    tar xzf /tmp/simplesamlphp.tar.gz -C /tmp && \
-    rm -f /tmp/simplesamlphp.tar.gz  && \
-    mv /tmp/simplesamlphp-* /var/www/simplesamlphp && \
-    touch /var/www/simplesamlphp/modules/exampleauth/enable
-COPY config/simplesamlphp/config.php /var/www/simplesamlphp/config
-COPY config/simplesamlphp/authsources.php /var/www/simplesamlphp/config
-COPY config/simplesamlphp/saml20-sp-remote.php /var/www/simplesamlphp/metadata
-COPY config/simplesamlphp/server.crt /var/www/simplesamlphp/cert/
-COPY config/simplesamlphp/server.pem /var/www/simplesamlphp/cert/
+# Install OS packages and cleanup
+RUN apt-get update && apt-get install -y git zip
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Apache
-COPY config/apache/ports.conf /etc/apache2
-COPY config/apache/simplesamlphp.conf /etc/apache2/sites-available
-COPY config/apache/cert.crt /etc/ssl/cert/cert.crt
-COPY config/apache/private.key /etc/ssl/private/private.key
-RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf && \
+# Install PHP application
+COPY . /app/
+RUN  composer install -d /app/
+RUN ln -s /app/public/api /var/www/api
+
+# Setup SimpleSAMLphp backend
+RUN cp /app/src/config/* /app/vendor/simplesamlphp/simplesamlphp/config/ && \
+    cp /app/src/metadata/* /app/vendor/simplesamlphp/simplesamlphp/metadata/ && \
+    ln -s /app/vendor/simplesamlphp/simplesamlphp/public /var/www/sso && \
+    mkdir -p /var/cache/simplesamlphp && \
+    chown -R www-data:www-data /var/cache/simplesamlphp && \
+    chmod 700 /var/cache/simplesamlphp && \
+    mkdir -p /app/logs && \
+    chown -R www-data:www-data /app/logs && \
+    chmod 700 /app/logs
+
+# Setup Apache backend
+RUN cp /app/.docker/apache/ports.conf /etc/apache2/ports.conf && \
+    cp /app/.docker/apache/simplesamlphp.conf /etc/apache2/sites-available/simplesamlphp.conf && \
+    echo "ServerName localhost" >> /etc/apache2/apache2.conf && \
     a2enmod ssl && \
     a2dissite 000-default.conf default-ssl.conf && \
     a2ensite simplesamlphp.conf
 
 # Set work dir
-WORKDIR /var/www/simplesamlphp
+WORKDIR /app
 
 # General setup
 EXPOSE 8080 8443
+
+# Call entrypoint
+ENTRYPOINT ["sh", "/app/.docker/entrypoint.sh"]

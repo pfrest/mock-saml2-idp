@@ -1,0 +1,31 @@
+name: Build
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: ["master"]
+
+jobs:
+  check_build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t mock-saml2-idp:pr .
+
+      - name: Check Docker build
+        run: |
+          # Start the container with environment variables
+          docker run \
+          -p 8080:8080 \
+          -p 8443:8443 \
+          -e SP_ACS_LOCATION=https://example.com/saml/acs/ \
+          -e SP_ENTITY_ID=https://example.com \
+          -d mock-saml2-idp:pr
+
+          # Wait for a few seconds to ensure the server is up and run some basic checks
+          sleep 10
+          curl --fail http://localhost:8080/api/settings.php
+          curl --fail http://localhost:8080/sso/saml2/idp/metadata.php
