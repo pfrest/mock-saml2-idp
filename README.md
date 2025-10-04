@@ -4,8 +4,8 @@
 [![Quality](https://github.com/pfrest/mock-saml2-idp/actions/workflows/quality.yml/badge.svg)](https://github.com/pfrest/mock-saml2-idp/actions/workflows/quality.yml)
 [![Release](https://github.com/pfrest/mock-saml2-idp/actions/workflows/release.yml/badge.svg)](https://github.com/pfrest/mock-saml2-idp/actions/workflows/release.yml)
 
-`mock-saml2-idp` is a radically simple SAML2 Identity Provider (IdP) for testing and developing SAML2 Service Providers 
-(SPs), all wrapped up in a single, easy-to-use Docker container. It supports highly configurable user attributes and 
+`mock-saml2-idp` is a radically simple SAML2 Identity Provider (IdP) for testing and developing SAML2 Service Providers
+(SPs), all wrapped up in a single, easy-to-use Docker container. It supports highly configurable user attributes and
 automatic logins to facilitate automated testing via CI/CD pipelines.
 
 ## Getting Started
@@ -96,8 +96,8 @@ https://localhost:8443/sso/saml2/idp/metadata.php
 ```
 
 > [!IMPORTANT]
-> Your `mock-saml2-idp` instance must be reachable from your SP directly if you are using automatic configuration via 
-> the metadata URL. If your SP cannot reach the IdP at the specified URL (e.g., blocked by a firewall, no route to 
+> Your `mock-saml2-idp` instance must be reachable from your SP directly if you are using automatic configuration via
+> the metadata URL. If your SP cannot reach the IdP at the specified URL (e.g., blocked by a firewall, no route to
 > host, etc.), you will need to use manual configuration to proceed.
 
 ### Manual Configuration
