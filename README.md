@@ -1,8 +1,12 @@
 # Mock SAML2 Identity Provider (IdP)
 
-`mock-saml2-idp` isa radically simple SAML2 Identity Provider (IdP) for the testing and development of SAML2 Service
-Providers (SP). All wrapped up nicely in a single, easy to use Docker container. Supports highly configurable
-user attributes and automatic logins to facilitate automated testing via CI/CD pipelines.
+[![Build](https://github.com/pfrest/mock-saml2-idp/actions/workflows/build.yml/badge.svg)](https://github.com/pfrest/mock-saml2-idp/actions/workflows/build.yml)
+[![Quality](https://github.com/pfrest/mock-saml2-idp/actions/workflows/quality.yml/badge.svg)](https://github.com/pfrest/mock-saml2-idp/actions/workflows/quality.yml)
+[![Release](https://github.com/pfrest/mock-saml2-idp/actions/workflows/release.yml/badge.svg)](https://github.com/pfrest/mock-saml2-idp/actions/workflows/release.yml)
+
+`mock-saml2-idp` is a radically simple SAML2 Identity Provider (IdP) for testing and developing SAML2 Service Providers 
+(SPs), all wrapped up in a single, easy-to-use Docker container. It supports highly configurable user attributes and 
+automatic logins to facilitate automated testing via CI/CD pipelines.
 
 ## Getting Started
 
@@ -29,7 +33,7 @@ docker run \
 
 > [!NOTE]
 > You will need to set the environment variables to match your SAML2 Service Provider (SP) configuration. See the
-> the [Variables section](#variables) below for more information on available environment variables.
+> [Variables section](#variables) below for more information on available environment variables.
 
 ## Variables
 
@@ -75,7 +79,7 @@ of all available environment variables:
 ## Configuring Your Service Provider (SP)
 
 Once you have the container running, you will need to configure your SAML2 Service Provider (SP) to trust the
-`mock-saml2-idp`:
+`mock-saml2-idp`.
 
 ### Automatic Configuration
 
@@ -92,9 +96,9 @@ https://localhost:8443/sso/saml2/idp/metadata.php
 ```
 
 > [!IMPORTANT]
-> It is required for your `mock-saml2-idp` instance to be reachable from your SP directly if you are using automatic
-> configuration via the metadata URL. If your SP cannot reach the IdP at the specified URL (e.g. blocked by firewall,
-> no route to host, etc.) you will need to use manual configuration to proceed.
+> Your `mock-saml2-idp` instance must be reachable from your SP directly if you are using automatic configuration via 
+> the metadata URL. If your SP cannot reach the IdP at the specified URL (e.g., blocked by a firewall, no route to 
+> host, etc.), you will need to use manual configuration to proceed.
 
 ### Manual Configuration
 
@@ -130,7 +134,7 @@ curl -k https://localhost:8443/api/settings.php
   "idp_user_first_name_attribute": "first_name",
   "idp_user_last_name": "User",
   "idp_user_last_name_attribute": "last_name",
-  "idp_user_email": "mock-saml2-idp-user@exmaple.com",
+  "idp_user_email": "mock-saml2-idp-user@example.com",
   "idp_user_email_attribute": "email",
   "idp_user_groups": ["group1", "group2"],
   "idp_user_groups_attribute": "groups",
