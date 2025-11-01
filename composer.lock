@@ -231,16 +231,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.8.0",
+            "version": "2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "21dc724a0583619cd1652f673303492272778051"
+                "reference": "c2270caaabe631b3b44c85f99e5a04bbb8060d16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/21dc724a0583619cd1652f673303492272778051",
-                "reference": "21dc724a0583619cd1652f673303492272778051",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c2270caaabe631b3b44c85f99e5a04bbb8060d16",
+                "reference": "c2270caaabe631b3b44c85f99e5a04bbb8060d16",
                 "shasum": ""
             },
             "require": {
@@ -256,7 +256,7 @@
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.2",
                 "http-interop/http-factory-tests": "0.9.0",
-                "phpunit/phpunit": "^8.5.44 || ^9.6.25"
+                "phpunit/phpunit": "^8.5.39 || ^9.6.20"
             },
             "suggest": {
                 "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
@@ -327,7 +327,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.8.0"
+                "source": "https://github.com/guzzle/psr7/tree/2.7.1"
             },
             "funding": [
                 {
@@ -343,7 +343,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-23T21:21:41+00:00"
+            "time": "2025-03-27T12:30:47+00:00"
         },
         {
             "name": "nyholm/psr7",
@@ -425,16 +425,16 @@
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v6.11.1",
+            "version": "v6.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "d9e3b36b47f04b497a0164c5a20f92acb4593284"
+                "reference": "d1ac35d784bf9f5e61b424901d5a014967f15b12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/d9e3b36b47f04b497a0164c5a20f92acb4593284",
-                "reference": "d9e3b36b47f04b497a0164c5a20f92acb4593284",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/d1ac35d784bf9f5e61b424901d5a014967f15b12",
+                "reference": "d1ac35d784bf9f5e61b424901d5a014967f15b12",
                 "shasum": ""
             },
             "require": {
@@ -455,7 +455,6 @@
             },
             "suggest": {
                 "decomplexity/SendOauth2": "Adapter for using XOAUTH2 authentication",
-                "ext-imap": "Needed to support advanced email address parsing according to RFC822",
                 "ext-mbstring": "Needed to send email in multibyte encoding charset or decode encoded addresses",
                 "ext-openssl": "Needed for secure SMTP sending and DKIM signing",
                 "greew/oauth2-azure-provider": "Needed for Microsoft Azure XOAUTH2 authentication",
@@ -495,7 +494,7 @@
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
             "support": {
                 "issues": "https://github.com/PHPMailer/PHPMailer/issues",
-                "source": "https://github.com/PHPMailer/PHPMailer/tree/v6.11.1"
+                "source": "https://github.com/PHPMailer/PHPMailer/tree/v6.12.0"
             },
             "funding": [
                 {
@@ -503,7 +502,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-30T11:54:53+00:00"
+            "time": "2025-10-15T16:49:08+00:00"
         },
         {
             "name": "psr/cache",
@@ -951,16 +950,16 @@
         },
         {
             "name": "simplesamlphp/assert",
-            "version": "v1.9.0",
+            "version": "v1.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplesamlphp/assert.git",
-                "reference": "13fe96d9f10ed340bc4fe11e03fed01c6dab8470"
+                "reference": "01b4e706daafb109e9fabbf3b4497d2f4dada035"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/assert/zipball/13fe96d9f10ed340bc4fe11e03fed01c6dab8470",
-                "reference": "13fe96d9f10ed340bc4fe11e03fed01c6dab8470",
+                "url": "https://api.github.com/repos/simplesamlphp/assert/zipball/01b4e706daafb109e9fabbf3b4497d2f4dada035",
+                "reference": "01b4e706daafb109e9fabbf3b4497d2f4dada035",
                 "shasum": ""
             },
             "require": {
@@ -968,18 +967,18 @@
                 "ext-filter": "*",
                 "ext-pcre": "*",
                 "ext-spl": "*",
-                "guzzlehttp/psr7": "~2.8.0",
-                "php": "^8.2",
+                "guzzlehttp/psr7": "~2.7.1",
+                "php": "^8.1",
                 "webmozart/assert": "~1.11.0"
             },
             "require-dev": {
                 "ext-intl": "*",
-                "simplesamlphp/simplesamlphp-test-framework": "~1.10.2"
+                "simplesamlphp/simplesamlphp-test-framework": "~1.9.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "v1.10.x-dev"
+                    "dev-master": "v1.1.x-dev"
                 }
             },
             "autoload": {
@@ -1004,9 +1003,9 @@
             "description": "A wrapper around webmozart/assert to make it useful beyond checking method arguments",
             "support": {
                 "issues": "https://github.com/simplesamlphp/assert/issues",
-                "source": "https://github.com/simplesamlphp/assert/tree/v1.9.0"
+                "source": "https://github.com/simplesamlphp/assert/tree/v1.8.3"
             },
-            "time": "2025-09-17T08:56:19+00:00"
+            "time": "2025-10-28T16:40:50+00:00"
         },
         {
             "name": "simplesamlphp/composer-module-installer",
@@ -1095,16 +1094,16 @@
         },
         {
             "name": "simplesamlphp/saml2",
-            "version": "v5.0.1",
+            "version": "v5.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplesamlphp/saml2.git",
-                "reference": "9c0040881eec1d9447dcc5a043d91450e62f81f4"
+                "reference": "13d7708158ac29299977dab779647c07c4974786"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/saml2/zipball/9c0040881eec1d9447dcc5a043d91450e62f81f4",
-                "reference": "9c0040881eec1d9447dcc5a043d91450e62f81f4",
+                "url": "https://api.github.com/repos/simplesamlphp/saml2/zipball/13d7708158ac29299977dab779647c07c4974786",
+                "reference": "13d7708158ac29299977dab779647c07c4974786",
                 "shasum": ""
             },
             "require": {
@@ -1115,21 +1114,22 @@
                 "ext-openssl": "*",
                 "ext-pcre": "*",
                 "ext-zlib": "*",
-                "nyholm/psr7": "^1.8",
+                "nyholm/psr7": "~1.8.2",
                 "php": "^8.1",
-                "psr/clock": "^1.0",
-                "psr/http-message": "^2.0",
-                "psr/log": "^2.0 || ^3.0",
-                "simplesamlphp/assert": "^1.1",
-                "simplesamlphp/xml-common": "^1.16",
-                "simplesamlphp/xml-security": "^1.6",
-                "simplesamlphp/xml-soap": "^1.3"
+                "psr/clock": "~1.0.0",
+                "psr/http-message": "~2.0",
+                "psr/log": "~2.3.1 || ~3.0.0",
+                "simplesamlphp/assert": "~1.8.1",
+                "simplesamlphp/xml-common": "~1.25.0",
+                "simplesamlphp/xml-security": "~1.13.4",
+                "simplesamlphp/xml-soap": "~1.7.0"
             },
             "require-dev": {
-                "beste/clock": "^3.0",
-                "icanhazstring/composer-unused": "^0.9.3",
-                "mockery/mockery": "^1.6",
-                "simplesamlphp/simplesamlphp-test-framework": "^1.5"
+                "beste/clock": "~3.0.0",
+                "ext-intl": "*",
+                "mockery/mockery": "~1.6.12",
+                "simplesamlphp/composer-xmlprovider-installer": "~1.0.2",
+                "simplesamlphp/simplesamlphp-test-framework": "~1.9.2"
             },
             "suggest": {
                 "ext-soap": "*"
@@ -1158,9 +1158,9 @@
             "description": "SAML2 PHP library from SimpleSAMLphp",
             "support": {
                 "issues": "https://github.com/simplesamlphp/saml2/issues",
-                "source": "https://github.com/simplesamlphp/saml2/tree/v5.0.1"
+                "source": "https://github.com/simplesamlphp/saml2/tree/v5.0.4"
             },
-            "time": "2025-05-13T18:12:37+00:00"
+            "time": "2025-09-10T08:09:36+00:00"
         },
         {
             "name": "simplesamlphp/saml2-legacy",
@@ -1224,16 +1224,16 @@
         },
         {
             "name": "simplesamlphp/simplesamlphp",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplesamlphp/simplesamlphp.git",
-                "reference": "d791ed73656102f4d553f7e0335cc6a528b1c2dd"
+                "reference": "2f644bd05f8d53293f828695b0304f2711844f19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/simplesamlphp/zipball/d791ed73656102f4d553f7e0335cc6a528b1c2dd",
-                "reference": "d791ed73656102f4d553f7e0335cc6a528b1c2dd",
+                "url": "https://api.github.com/repos/simplesamlphp/simplesamlphp/zipball/2f644bd05f8d53293f828695b0304f2711844f19",
+                "reference": "2f644bd05f8d53293f828695b0304f2711844f19",
                 "shasum": ""
             },
             "require": {
@@ -1257,12 +1257,14 @@
                 "simplesamlphp/composer-module-installer": "^1.3",
                 "simplesamlphp/saml2": "^5.0.0",
                 "simplesamlphp/saml2-legacy": "^4.18.1",
-                "simplesamlphp/simplesamlphp-assets-base": "~2.3.0",
+                "simplesamlphp/simplesamlphp-assets-base": "~2.4.0",
+                "simplesamlphp/xml-common": "^1.24.2",
                 "simplesamlphp/xml-security": "^1.7",
                 "symfony/cache": "^6.4",
                 "symfony/config": "^6.4",
                 "symfony/console": "^6.4",
                 "symfony/dependency-injection": "^6.4",
+                "symfony/expression-language": "~6.4.0",
                 "symfony/filesystem": "^6.4",
                 "symfony/finder": "^6.4",
                 "symfony/framework-bundle": "^6.4",
@@ -1301,7 +1303,7 @@
             "type": "project",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5.0.x-dev"
+                    "dev-master": "2.4.0.x-dev"
                 }
             },
             "autoload": {
@@ -1350,20 +1352,20 @@
                 "issues": "https://github.com/simplesamlphp/simplesamlphp/issues",
                 "source": "https://github.com/simplesamlphp/simplesamlphp"
             },
-            "time": "2025-06-04T13:10:38+00:00"
+            "time": "2025-10-06T10:20:56+00:00"
         },
         {
             "name": "simplesamlphp/simplesamlphp-assets-base",
-            "version": "v2.3.11",
+            "version": "v2.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplesamlphp/simplesamlphp-assets-base.git",
-                "reference": "c852ea06c436222ec3e942122d4cec9f8661ba70"
+                "reference": "cba14306ee73a4f7f0321d12f20844400d5a9d16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/simplesamlphp-assets-base/zipball/c852ea06c436222ec3e942122d4cec9f8661ba70",
-                "reference": "c852ea06c436222ec3e942122d4cec9f8661ba70",
+                "url": "https://api.github.com/repos/simplesamlphp/simplesamlphp-assets-base/zipball/cba14306ee73a4f7f0321d12f20844400d5a9d16",
+                "reference": "cba14306ee73a4f7f0321d12f20844400d5a9d16",
                 "shasum": ""
             },
             "require": {
@@ -1384,37 +1386,38 @@
             "description": "Assets for the SimpleSAMLphp main repository",
             "support": {
                 "issues": "https://github.com/simplesamlphp/simplesamlphp-assets-base/issues",
-                "source": "https://github.com/simplesamlphp/simplesamlphp-assets-base/tree/v2.3.11"
+                "source": "https://github.com/simplesamlphp/simplesamlphp-assets-base/tree/v2.4.3"
             },
-            "time": "2025-09-18T17:06:32+00:00"
+            "time": "2025-09-18T17:05:10+00:00"
         },
         {
             "name": "simplesamlphp/xml-common",
-            "version": "v1.23.2",
+            "version": "v1.25.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplesamlphp/xml-common.git",
-                "reference": "37dcafbe2ed9d339213599a5cb7566c062d3c1b3"
+                "reference": "999603aa521d91e17b562bb0b498513af80eb190"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/xml-common/zipball/37dcafbe2ed9d339213599a5cb7566c062d3c1b3",
-                "reference": "37dcafbe2ed9d339213599a5cb7566c062d3c1b3",
+                "url": "https://api.github.com/repos/simplesamlphp/xml-common/zipball/999603aa521d91e17b562bb0b498513af80eb190",
+                "reference": "999603aa521d91e17b562bb0b498513af80eb190",
                 "shasum": ""
             },
             "require": {
                 "ext-date": "*",
                 "ext-dom": "*",
+                "ext-filter": "*",
                 "ext-libxml": "*",
                 "ext-pcre": "*",
                 "ext-spl": "*",
                 "php": "^8.1",
-                "simplesamlphp/assert": "^1.2",
-                "simplesamlphp/composer-xmlprovider-installer": "~1.0.0",
-                "symfony/finder": "^6.4"
+                "simplesamlphp/assert": "~1.8.1",
+                "simplesamlphp/composer-xmlprovider-installer": "~1.0.2",
+                "symfony/finder": "~6.4.0"
             },
             "require-dev": {
-                "simplesamlphp/simplesamlphp-test-framework": "^1.7"
+                "simplesamlphp/simplesamlphp-test-framework": "~1.9.2"
             },
             "type": "simplesamlphp-xmlprovider",
             "autoload": {
@@ -1446,20 +1449,20 @@
                 "issues": "https://github.com/simplesamlphp/xml-common/issues",
                 "source": "https://github.com/simplesamlphp/xml-common"
             },
-            "time": "2024-12-20T22:40:17+00:00"
+            "time": "2025-06-29T13:05:44+00:00"
         },
         {
             "name": "simplesamlphp/xml-security",
-            "version": "v1.12.0",
+            "version": "v1.13.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplesamlphp/xml-security.git",
-                "reference": "797c984b03e1cd52483538ff9e9b762cfbd942c1"
+                "reference": "f6f32a3c2c6b398408d5bccc9d59445edc1cb67d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/xml-security/zipball/797c984b03e1cd52483538ff9e9b762cfbd942c1",
-                "reference": "797c984b03e1cd52483538ff9e9b762cfbd942c1",
+                "url": "https://api.github.com/repos/simplesamlphp/xml-security/zipball/f6f32a3c2c6b398408d5bccc9d59445edc1cb67d",
+                "reference": "f6f32a3c2c6b398408d5bccc9d59445edc1cb67d",
                 "shasum": ""
             },
             "require": {
@@ -1470,11 +1473,11 @@
                 "ext-pcre": "*",
                 "ext-spl": "*",
                 "php": "^8.1",
-                "simplesamlphp/assert": "^1.6",
-                "simplesamlphp/xml-common": "^1.22.0"
+                "simplesamlphp/assert": "~1.8.1",
+                "simplesamlphp/xml-common": "~1.25.0"
             },
             "require-dev": {
-                "simplesamlphp/simplesamlphp-test-framework": "^1.8"
+                "simplesamlphp/simplesamlphp-test-framework": "~1.9.2"
             },
             "type": "simplesamlphp-xmlprovider",
             "autoload": {
@@ -1508,34 +1511,33 @@
             ],
             "support": {
                 "issues": "https://github.com/simplesamlphp/xml-security/issues",
-                "source": "https://github.com/simplesamlphp/xml-security/tree/v1.12.0"
+                "source": "https://github.com/simplesamlphp/xml-security/tree/v1.13.7"
             },
-            "time": "2024-12-19T20:20:40+00:00"
+            "time": "2025-06-29T13:07:27+00:00"
         },
         {
             "name": "simplesamlphp/xml-soap",
-            "version": "v1.6.0",
+            "version": "v1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplesamlphp/xml-soap.git",
-                "reference": "f47b05dbc98274d83dca37ea7aa6bc02da3cfb80"
+                "reference": "ca1ee4ea29c62fa66fc30d040b4013b4543f4f76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/xml-soap/zipball/f47b05dbc98274d83dca37ea7aa6bc02da3cfb80",
-                "reference": "f47b05dbc98274d83dca37ea7aa6bc02da3cfb80",
+                "url": "https://api.github.com/repos/simplesamlphp/xml-soap/zipball/ca1ee4ea29c62fa66fc30d040b4013b4543f4f76",
+                "reference": "ca1ee4ea29c62fa66fc30d040b4013b4543f4f76",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-pcre": "*",
                 "php": "^8.1",
-                "simplesamlphp/assert": "^1.6",
-                "simplesamlphp/composer-xmlprovider-installer": "~1.0.1",
-                "simplesamlphp/xml-common": "~1.23.2"
+                "simplesamlphp/assert": "~1.8.1",
+                "simplesamlphp/xml-common": "~1.25.0"
             },
             "require-dev": {
-                "simplesamlphp/simplesamlphp-test-framework": "^1.8"
+                "simplesamlphp/simplesamlphp-test-framework": "~1.9.2"
             },
             "type": "simplesamlphp-xmlprovider",
             "extra": {
@@ -1561,22 +1563,22 @@
             "description": "SimpleSAMLphp library for XML SOAP",
             "support": {
                 "issues": "https://github.com/simplesamlphp/xml-soap/issues",
-                "source": "https://github.com/simplesamlphp/xml-soap/tree/v1.6.0"
+                "source": "https://github.com/simplesamlphp/xml-soap/tree/v1.7.1"
             },
-            "time": "2024-12-20T22:45:49+00:00"
+            "time": "2025-06-03T21:07:04+00:00"
         },
         {
             "name": "symfony/cache",
-            "version": "v6.4.26",
+            "version": "v6.4.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
-                "reference": "66c853ddcbf85c1984169869be498c3e7597b367"
+                "reference": "3b9cf252b3bb54d5daddea5704b95ea7117b39f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/66c853ddcbf85c1984169869be498c3e7597b367",
-                "reference": "66c853ddcbf85c1984169869be498c3e7597b367",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/3b9cf252b3bb54d5daddea5704b95ea7117b39f4",
+                "reference": "3b9cf252b3bb54d5daddea5704b95ea7117b39f4",
                 "shasum": ""
             },
             "require": {
@@ -1643,7 +1645,7 @@
                 "psr6"
             ],
             "support": {
-                "source": "https://github.com/symfony/cache/tree/v6.4.26"
+                "source": "https://github.com/symfony/cache/tree/v6.4.27"
             },
             "funding": [
                 {
@@ -1663,7 +1665,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-11T09:57:09+00:00"
+            "time": "2025-10-17T12:08:26+00:00"
         },
         {
             "name": "symfony/cache-contracts",
@@ -1822,16 +1824,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v6.4.26",
+            "version": "v6.4.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "492de6dfd93910d7d7a729c5a04ddcd2b9e99c4f"
+                "reference": "13d3176cf8ad8ced24202844e9f95af11e2959fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/492de6dfd93910d7d7a729c5a04ddcd2b9e99c4f",
-                "reference": "492de6dfd93910d7d7a729c5a04ddcd2b9e99c4f",
+                "url": "https://api.github.com/repos/symfony/console/zipball/13d3176cf8ad8ced24202844e9f95af11e2959fc",
+                "reference": "13d3176cf8ad8ced24202844e9f95af11e2959fc",
                 "shasum": ""
             },
             "require": {
@@ -1896,7 +1898,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v6.4.26"
+                "source": "https://github.com/symfony/console/tree/v6.4.27"
             },
             "funding": [
                 {
@@ -1916,7 +1918,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-26T12:13:46+00:00"
+            "time": "2025-10-06T10:25:16+00:00"
         },
         {
             "name": "symfony/dependency-injection",
@@ -2312,6 +2314,74 @@
             "time": "2024-09-25T14:21:43+00:00"
         },
         {
+            "name": "symfony/expression-language",
+            "version": "v6.4.24",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/expression-language.git",
+                "reference": "1ea0adaa53539ea7e70821ae9de49ebe03ae7091"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/expression-language/zipball/1ea0adaa53539ea7e70821ae9de49ebe03ae7091",
+                "reference": "1ea0adaa53539ea7e70821ae9de49ebe03ae7091",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/cache": "^5.4|^6.0|^7.0",
+                "symfony/deprecation-contracts": "^2.5|^3",
+                "symfony/service-contracts": "^2.5|^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\ExpressionLanguage\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides an engine that can compile and evaluate expressions",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/expression-language/tree/v6.4.24"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-07-10T08:14:14+00:00"
+        },
+        {
             "name": "symfony/filesystem",
             "version": "v6.4.24",
             "source": {
@@ -2383,16 +2453,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v6.4.24",
+            "version": "v6.4.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "73089124388c8510efb8d2d1689285d285937b08"
+                "reference": "a1b6aa435d2fba50793b994a839c32b6064f063b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/73089124388c8510efb8d2d1689285d285937b08",
-                "reference": "73089124388c8510efb8d2d1689285d285937b08",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/a1b6aa435d2fba50793b994a839c32b6064f063b",
+                "reference": "a1b6aa435d2fba50793b994a839c32b6064f063b",
                 "shasum": ""
             },
             "require": {
@@ -2427,7 +2497,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v6.4.24"
+                "source": "https://github.com/symfony/finder/tree/v6.4.27"
             },
             "funding": [
                 {
@@ -2447,20 +2517,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-07-15T12:02:45+00:00"
+            "time": "2025-10-15T18:32:00+00:00"
         },
         {
             "name": "symfony/framework-bundle",
-            "version": "v6.4.26",
+            "version": "v6.4.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/framework-bundle.git",
-                "reference": "e16f6ddaf8f026d5f3323f3bbc0660654ccdd837"
+                "reference": "ee58c2a73218d8f4763824e1414c5f9b4519c91f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/e16f6ddaf8f026d5f3323f3bbc0660654ccdd837",
-                "reference": "e16f6ddaf8f026d5f3323f3bbc0660654ccdd837",
+                "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/ee58c2a73218d8f4763824e1414c5f9b4519c91f",
+                "reference": "ee58c2a73218d8f4763824e1414c5f9b4519c91f",
                 "shasum": ""
             },
             "require": {
@@ -2580,7 +2650,7 @@
             "description": "Provides a tight integration between Symfony components and the Symfony full-stack framework",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/framework-bundle/tree/v6.4.26"
+                "source": "https://github.com/symfony/framework-bundle/tree/v6.4.27"
             },
             "funding": [
                 {
@@ -2600,7 +2670,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-16T07:32:45+00:00"
+            "time": "2025-10-15T17:35:09+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -2685,16 +2755,16 @@
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v6.4.26",
+            "version": "v6.4.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "8b0f963293aede77593c9845c8c0af34752e893a"
+                "reference": "4a4d0f6cafdbc09c9a7940db17c0fc23bb88a2bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/8b0f963293aede77593c9845c8c0af34752e893a",
-                "reference": "8b0f963293aede77593c9845c8c0af34752e893a",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/4a4d0f6cafdbc09c9a7940db17c0fc23bb88a2bb",
+                "reference": "4a4d0f6cafdbc09c9a7940db17c0fc23bb88a2bb",
                 "shasum": ""
             },
             "require": {
@@ -2779,7 +2849,7 @@
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-kernel/tree/v6.4.26"
+                "source": "https://github.com/symfony/http-kernel/tree/v6.4.27"
             },
             "funding": [
                 {
@@ -2799,20 +2869,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-27T12:20:56+00:00"
+            "time": "2025-10-28T10:06:47+00:00"
         },
         {
             "name": "symfony/intl",
-            "version": "v6.4.26",
+            "version": "v6.4.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/intl.git",
-                "reference": "0cd11e99e8c505f7ee7c6f0ccc8bccb8e14e652f"
+                "reference": "ccc52824610e7de72424cf516e52d4fb39e3bfa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/intl/zipball/0cd11e99e8c505f7ee7c6f0ccc8bccb8e14e652f",
-                "reference": "0cd11e99e8c505f7ee7c6f0ccc8bccb8e14e652f",
+                "url": "https://api.github.com/repos/symfony/intl/zipball/ccc52824610e7de72424cf516e52d4fb39e3bfa5",
+                "reference": "ccc52824610e7de72424cf516e52d4fb39e3bfa5",
                 "shasum": ""
             },
             "require": {
@@ -2866,7 +2936,7 @@
                 "localization"
             ],
             "support": {
-                "source": "https://github.com/symfony/intl/tree/v6.4.26"
+                "source": "https://github.com/symfony/intl/tree/v6.4.27"
             },
             "funding": [
                 {
@@ -2886,7 +2956,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-07T21:26:26+00:00"
+            "time": "2025-10-01T06:01:44+00:00"
         },
         {
             "name": "symfony/password-hasher",
@@ -3920,16 +3990,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v7.3.4",
+            "version": "v7.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "b8abe7daf2730d07dfd4b2ee1cecbf0dd2fbdabb"
+                "reference": "476c4ae17f43a9a36650c69879dcf5b1e6ae724d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/b8abe7daf2730d07dfd4b2ee1cecbf0dd2fbdabb",
-                "reference": "b8abe7daf2730d07dfd4b2ee1cecbf0dd2fbdabb",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/476c4ae17f43a9a36650c69879dcf5b1e6ae724d",
+                "reference": "476c4ae17f43a9a36650c69879dcf5b1e6ae724d",
                 "shasum": ""
             },
             "require": {
@@ -3983,7 +4053,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v7.3.4"
+                "source": "https://github.com/symfony/var-dumper/tree/v7.3.5"
             },
             "funding": [
                 {
@@ -4003,7 +4073,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-11T10:12:26+00:00"
+            "time": "2025-09-27T09:00:46+00:00"
         },
         {
             "name": "symfony/var-exporter",
@@ -4164,16 +4234,16 @@
         },
         {
             "name": "twig/intl-extra",
-            "version": "v3.21.0",
+            "version": "v3.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/intl-extra.git",
-                "reference": "05bc5d46b9df9e62399eae53e7c0b0633298b146"
+                "reference": "7393fc911c7315db18a805d3a541ac7bb9e4fdc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/intl-extra/zipball/05bc5d46b9df9e62399eae53e7c0b0633298b146",
-                "reference": "05bc5d46b9df9e62399eae53e7c0b0633298b146",
+                "url": "https://api.github.com/repos/twigphp/intl-extra/zipball/7393fc911c7315db18a805d3a541ac7bb9e4fdc0",
+                "reference": "7393fc911c7315db18a805d3a541ac7bb9e4fdc0",
                 "shasum": ""
             },
             "require": {
@@ -4212,7 +4282,7 @@
                 "twig"
             ],
             "support": {
-                "source": "https://github.com/twigphp/intl-extra/tree/v3.21.0"
+                "source": "https://github.com/twigphp/intl-extra/tree/v3.22.0"
             },
             "funding": [
                 {
@@ -4224,20 +4294,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-01-31T20:45:36+00:00"
+            "time": "2025-09-15T06:05:04+00:00"
         },
         {
             "name": "twig/twig",
-            "version": "v3.21.1",
+            "version": "v3.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "285123877d4dd97dd7c11842ac5fb7e86e60d81d"
+                "reference": "4509984193026de413baf4ba80f68590a7f2c51d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/285123877d4dd97dd7c11842ac5fb7e86e60d81d",
-                "reference": "285123877d4dd97dd7c11842ac5fb7e86e60d81d",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/4509984193026de413baf4ba80f68590a7f2c51d",
+                "reference": "4509984193026de413baf4ba80f68590a7f2c51d",
                 "shasum": ""
             },
             "require": {
@@ -4291,7 +4361,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.21.1"
+                "source": "https://github.com/twigphp/Twig/tree/v3.22.0"
             },
             "funding": [
                 {
@@ -4303,7 +4373,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-03T07:21:55+00:00"
+            "time": "2025-10-29T15:56:47+00:00"
         },
         {
             "name": "webmozart/assert",
