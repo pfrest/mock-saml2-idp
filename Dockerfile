@@ -6,6 +6,7 @@ COPY --from=composer /usr/bin/composer /usr/local/bin/composer
 
 # Install OS packages and cleanup
 RUN apt-get update && apt-get install -y git zip
+RUN docker-php-ext-install bcmath
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install PHP application
